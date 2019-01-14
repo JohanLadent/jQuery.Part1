@@ -21,8 +21,8 @@
     <li class="remove">Laravel</li>
   </ol>
   <script>
-  $(document).ready(function(){
-  $(".remove").toggleClass(function(){
+  $(function(){
+  $(".remove").each(function(){
     $(this).remove();
   });
 });

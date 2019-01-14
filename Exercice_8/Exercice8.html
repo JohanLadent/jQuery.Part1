@@ -21,7 +21,9 @@
     <li>Laravel</li>
   </ol>
   <script>
-document.querySelector('ol').style.color = 'Red';
+  $(function(){
+    $('ol > li').css('color', 'red');
+  });
   </script>
 </body>
 </html>

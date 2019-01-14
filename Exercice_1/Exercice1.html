@@ -12,11 +12,16 @@
     </p>
   </div>
   <script>
-  $(document).ready(function(){
-  $("p").click(function(){
-    $(this).hide();
+  // Attendre que la page soit complètement changée avec doc.ready avant de cacher, ou $ avant fonction.
+  $(function(){
+    $('div').hide();
+    // document.getElementById('text').style.display = "none";
   });
-});
+//   $(function(){
+//   $("p").click(function(){
+//     $(this).hide();
+//   });
+// });
   </script>
 </body>
 </html>

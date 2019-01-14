@@ -21,8 +21,9 @@
     <li class="hide">Laravel</li>
   </ol>
   <script>
-  $(document).ready(function(){
-  $(".hide").click(function(){
+  $(function(){
+  $(".hide").each(function(){
+    // each = Parcourez un objet jQuery en exécutant une fonction pour chaque élément correspondant. permet de les cacher directement.
     $(this).hide();
   });
 });
